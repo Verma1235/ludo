@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="gamebox">
+                <div class="players_cont">
+                    <div class="player_sub_cont">
+                        <div class="pieces_show"><i class="bi bi-geo-alt-fill red red1"></i></div>
+                        <button class="playbtn"><i class="bi bi-dice-4-fill dice"></i></button>
+                    </div>
+                    <div class="player_sub_cont">
+                        <button class="playbtn2"><i class="bi bi-dice-6-fill dice"></i></button>
+                        <div class="pieces_show2"><i class="bi bi-geo-alt-fill green green1"></i></div>
+                    </div>
+                </div>
+                <!-- first part -->
+
+                <div class="home" style="background: var(--red);">
+                    <div class="home_sub_cont">
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--red);"><i
+                                    class="bi bi-geo-alt-fill red red1"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--red);"><i
+                                    class="bi bi-geo-alt-fill red red2"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--red);"><i
+                                    class="bi bi-geo-alt-fill red red3"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--red);"><i
+                                    class="bi bi-geo-alt-fill red red4"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="verticalpath">
+                    <div class="btn_position_cont_vertical">
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"><i class="bi bi-star"></i></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                    </div>
+                    <div class="btn_position_cont_vertical">
+                        <button class="btn_vertical"><i class="bi bi-arrow-down"
+                                style="color:var(--green)"></i></button>
+                        <button class="btn_vertical family_of_green_box"></button>
+                        <button class="btn_vertical family_of_green_box"></button>
+                        <button class="btn_vertical family_of_green_box"></button>
+                        <button class="btn_vertical family_of_green_box"></button>
+                        <button class="btn_vertical family_of_green_box"></button>
+                    </div>
+                    <div class="btn_position_cont_vertical">
+                        <button class="btn_vertical "></button>
+                        <button class="btn_vertical family_of_green_box"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                    </div>
+                </div>
+                <div class="home" style="background: var(--green); margin-left: 4px;">
+                    <div class="home_sub_cont">
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background:var(--green) ;"><i
+                                    class="bi bi-geo-alt-fill green green1"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background:var(--green) ;"><i
+                                    class="bi bi-geo-alt-fill green green2"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background:var(--green) ;"><i
+                                    class="bi bi-geo-alt-fill green green3"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--green);"><i
+                                    class="bi bi-geo-alt-fill green green4"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- second part -->
+                <div id="middle">
+                    <div class="horizontalpath">
+                        <div class="btn_position_cont_horizontal">
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal family_of_red_box"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                        </div>
+                        <div class="btn_position_cont_horizontal">
+                            <button class="btn_horizontal"><i class="bi bi-arrow-right"
+                                    style="color:var(--red);"></i></button>
+                            <button class="btn_horizontal family_of_red_box"></button>
+                            <button class="btn_horizontal family_of_red_box"></button>
+                            <button class="btn_horizontal family_of_red_box"></button>
+                            <button class="btn_horizontal family_of_red_box"></button>
+                            <button class="btn_horizontal family_of_red_box"></button>
+                        </div>
+                        <div class="btn_position_cont_horizontal">
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"><i class="bi bi-star"></i></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                        </div>
+                    </div>
+                    <div class="centerBox">
+                        <div id="center_parent">
+                            <div class="winbox1"></div>
+                            <div class="winbox2"></div>
+                            <div class="winbox3"></div>
+                            <div class="winbox4"></div>
+                        </div>
+
+                    </div>
+                    <div class="horizontalpath">
+                        <div class="btn_position_cont_horizontal">
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"><i class="bi bi-star"></i></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                        </div>
+                        <div class="btn_position_cont_horizontal">
+                            <button class="btn_horizontal family_of_yellow_box"></button>
+                            <button class="btn_horizontal family_of_yellow_box"></button>
+                            <button class="btn_horizontal family_of_yellow_box"></button>
+                            <button class="btn_horizontal family_of_yellow_box"></button>
+                            <button class="btn_horizontal family_of_yellow_box"></button>
+                            <button class="btn_horizontal"><i class="bi bi-arrow-left"
+                                    style="color:var(--yellow)"></i></button>
+                        </div>
+                        <div class="btn_position_cont_horizontal">
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal"></button>
+                            <button class="btn_horizontal family_of_yellow_box"></button>
+                            <button class="btn_horizontal"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third part -->
+                <div class="home" style="background: var(--blue);">
+                    <div class="home_sub_cont">
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--blue);"><i
+                                    class="bi bi-geo-alt-fill blue blue1"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--blue);"><i
+                                    class="bi bi-geo-alt-fill blue blue2"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--blue);"><i
+                                    class="bi bi-geo-alt-fill blue blue3"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background: var(--blue);"><i
+                                    class="bi bi-geo-alt-fill blue blue4"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="verticalpath">
+                    <div class="btn_position_cont_vertical">
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical family_of_blue_box"></button>
+                        <button class="btn_vertical"></button>
+                    </div>
+                    <div class="btn_position_cont_vertical">
+                        <button class="btn_vertical family_of_blue_box"></button>
+                        <button class="btn_vertical family_of_blue_box"></button>
+                        <button class="btn_vertical family_of_blue_box"></button>
+                        <button class="btn_vertical family_of_blue_box"></button>
+                        <button class="btn_vertical family_of_blue_box"></button>
+                        <button class="btn_vertical"> <i class="bi bi-arrow-up" style="color:var(--blue)"></i> <button>
+                    </div>
+                    <div class="btn_position_cont_vertical">
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"><i class="bi bi-star"></i></button>
+                        <button class="btn_vertical"></button>
+                        <button class="btn_vertical"></button>
+                    </div>
+                </div>
+                <div class="home" style="background:var(--yellow);margin-left: 4px;">
+                    <div class="home_sub_cont">
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background:var(--yellow) ;"><i
+                                    class="bi bi-geo-alt-fill yellow yellow1"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background:var(--yellow) ;"><i
+                                    class="bi bi-geo-alt-fill yellow yellow2"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background:var(--yellow) ;"><i
+                                    class="bi bi-geo-alt-fill yellow yellow3"></i></div>
+                        </div>
+                        <div class="home_box">
+                            <div class="btn_pos_" style="background:var(--yellow) ;"><i
+                                    class="bi bi-geo-alt-fill yellow yellow4"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- player event  -->
+
+                <div class="players_cont">
+                    <div class="player_sub_cont">
+                        <div class="pieces_show"><i class="bi bi-geo-alt-fill blue blue1"></i></div>
+                        <button class="playbtn"><i class="bi bi-dice-5-fill dice"></i></button>
+                    </div>
+                    <div class="player_sub_cont">
+                        <button class="playbtn2"><i class="bi bi-dice-1-fill dice"></i></button>
+                        <div class="pieces_show2"><i class="bi bi-geo-alt-fill yellow yellow1"></i></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
